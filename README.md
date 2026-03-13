@@ -43,7 +43,7 @@ This project demonstrates:
 
 • CSS positioning and styling
 
-#💡 Future Improvements
+# 💡 Future Improvements
 
 • Blinking animation
 
