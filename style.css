@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
+    overflow: hidden;
+}
+
+.face {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffe066, #ffb703);
+    position: relative;
+    box-shadow: 0 0 40px rgba(255, 200, 0, 0.7)
+        inset -10px -10px 30px rgba(0, 0, 0, 0.25),
+        inset 10px 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.eyes {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eye {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        inset -4px -4px 10px rgba(0, 0, 0, 0.25),
+        inset 4px 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+.pupil {
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.05s linear;
+}
+
+.pupil::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 80px;
+    border-bottom: 12px solid #222;
+    border-radius: 0 0 150px 150px;
+}
